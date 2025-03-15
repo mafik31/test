@@ -1,0 +1,102 @@
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #FEDAE6 #ffffff;
+    cursor: url('/img/cursor.gif'), pointer !important; 
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #FEDAE6;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+html {
+  background-color:#FFD2E9;
+  background-image:url('../img/bgs/candylighter.jpg');
+  font-family: "Comic Sans MS", "Comic Sans";
+  font-size: 10pt;
+}
+body {
+  width:700px;
+  color:#D663A2;
+  margin-left:auto;
+  margin-right:auto;
+}
+img {
+  padding: 5px;
+}
+.item1 { grid-area: header; height: 115px; background-image: url('/img/banner.png'); background-size: contain; background-repeat: no-repeat; background-position: center; overflow: hidden; }
+.item2 { grid-area: main; }
+.item3 { grid-area: right; }
+.item4 { grid-area: footer; }
+.item5 { grid-area: status; }
+.item6 { grid-area: onehalf; }
+.item7 { grid-area: otherhalf; }
+
+.layout {
+  border-image: url(../img/graphics/cloud.png) 9 fill round;
+  border-width: 9px;
+  border-style: solid;
+  filter: drop-shadow(0px 0px 3px rgba(212, 133, 176, 1));
+}
+
+.grid-container {
+  display: inline-grid;
+  grid-template-areas:
+    'status status header header header header header'
+    'right main main main main main main'
+    'footer footer footer footer footer footer footer';
+  gap: 3px;
+  background-color:white;
+  background-image: url('../img/bgs/cloudslighter.png');
+  background-size:200px;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgba(212, 133, 176, 1);
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#statuscafe {
+}
+#statuscafe-username {
+    font-size: 8pt;
+    font-weight: bold;
+}
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+    font-size: 9pt;
+
+}
+table, th, td {
+  border:none;
+  padding: 5px;
+}
+.header {
+  font-size: 20px;
+  text-align:left;
+  text-shadow: -1px 0 #D663A2, 0 1px #D663A2, 1px 0 #D663A2, 0 -1px #D663A2;
+  padding: 5px;
+  margin: 3px;
+  color: white;
+  margin-left:-5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: linear-gradient(80deg, rgba(255,199,209,1) 0%, rgba(255,213,184,1) 13%, rgba(255,251,212,1) 24%, rgba(226,255,217,1) 36%, rgba(216,243,255,1) 48%, rgba(214,220,255,1) 59%, rgba(235,212,255,0.5) 68%, rgba(235,212,255,0.5) 68%, rgba(255,214,240,0.5) 79%, rgba(248,215,225,0) 92%, rgba(244,216,221,0) 100%, rgba(189,226,255,0) 100%);
+}
+hr {
+  border-top: 2px dashed #F5B2C3;
+}
